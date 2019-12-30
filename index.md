@@ -6,13 +6,31 @@ description: "Just the Docs is a responsive Jekyll theme with built-in search th
 permalink: /
 ---
 
-# Focus on writing good documentation
-{: .fs-9 }
+# Librehash Homepage
+{: .fs-9}
 
-Just the Docs gives your documentation a jumpstart with a responsive Jekyll theme that is easily customizable and hosted on GitHub Pages.
-{: .fs-6 .fw-300 }
+Welcome to the Librehash homepage\!
+{: .fs-6.fw-300}
 
-[Get started now](#getting-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [View it on GitHub](https://github.com/pmarsceill/just-the-docs){: .btn .fs-5 .mb-4 .mb-md-0 }
+Here you will find any and all information related to this organization, including:
+{: .fs-6.fw-300}
+
+1\. Our 'mission statement'
+{: .fs-6.fw-300}
+
+2\. Why this brand was created
+{: .fs-6.fw-300}
+
+3\. What this brand intends on doing
+{: .fs-6.fw-300}
+
+4\. Plethora of free resources that we have hosted across the blockchain space
+{: .fs-6.fw-300}
+
+If you're a follower of Librehash and the other entities under its embrella, make sure to bookmark this page for future reference, because we will be keeping it updated \*regularly\*\!
+{: .fs-6.fw-300}
+
+[Get started now](#getting-started){: .btn.btn-primary.fs-5.mb-4.mb-md-0.mr-2} [View it on GitHub](https://github.com/pmarsceill/just-the-docs){: .btn.fs-5.mb-4.mb-md-0}
 
 ---
 
@@ -25,44 +43,52 @@ Just the Docs is built for [Jekyll](https://jekyllrb.com), a static site generat
 ### Quick start: Use as a GitHub Pages remote theme
 
 1. Add Just the Docs to your Jekyll site's `_config.yml` as a [remote theme](https://blog.github.com/2017-11-29-use-any-theme-with-github-pages/)
-```yaml
-remote_theme: pmarsceill/just-the-docs
-```
-<small>You must have GitHub Pages enabled on your repo, one or more Markdown files, and a `_config.yml` file. [See an example repository](https://github.com/pmarsceill/jtd-remote)</small>
+
+   ~~~yaml
+   remote_theme: pmarsceill/just-the-docs
+   ~~~
+
+   <small>You must have GitHub Pages enabled on your repo, one or more Markdown files, and a <code>_config.yml</code> file. <a href="https://github.com/pmarsceill/jtd-remote">See an example repository</a></small>
 
 ### Local installation: Use the gem-based theme
 
 1. Install the Ruby Gem
-```bash
-$ gem install just-the-docs
-```
-```yaml
-# .. or add it to your your Jekyll site’s Gemfile
-gem "just-the-docs"
-```
+
+   ~~~bash
+   $ gem install just-the-docs
+   ~~~
+
+   ~~~yaml
+   # .. or add it to your your Jekyll site’s Gemfile
+   gem "just-the-docs"
+   ~~~
 2. Add Just the Docs to your Jekyll site’s `_config.yml`
-```yaml
-theme: "just-the-docs"
-```
-3. _Optional:_ Initialize search data (creates `search-data.json`)
-```bash
-$ bundle exec just-the-docs rake search:init
-```
-3. Run you local Jekyll server
-```bash
-$ jekyll serve
-```
-```bash
-# .. or if you're using a Gemfile (bundler)
-$ bundle exec jekyll serve
-```
-4. Point your web browser to [http://localhost:4000](http://localhost:4000)
+
+   ~~~yaml
+   theme: "just-the-docs"
+   ~~~
+3. *Optional:* Initialize search data (creates `search-data.json`)
+
+   ~~~bash
+   $ bundle exec just-the-docs rake search:init
+   ~~~
+4. Run you local Jekyll server
+
+   ~~~bash
+   $ jekyll serve
+   ~~~
+
+   ~~~bash
+   # .. or if you're using a Gemfile (bundler)
+   $ bundle exec jekyll serve
+   ~~~
+5. Point your web browser to [http://localhost:4000](http://localhost:4000)
 
 If you're hosting your site on GitHub Pages, [set up GitHub Pages and Jekyll locally](https://help.github.com/en/articles/setting-up-your-github-pages-site-locally-with-jekyll) so that you can more easily work in your development environment.
 
 ### Configure Just the Docs
 
-- [See configuration options]({{ site.baseurl }}{% link docs/configuration.md %})
+* [See configuration options]({{ site.baseurl }}{% link docs/configuration.md %})
 
 ---
 
@@ -76,18 +102,14 @@ Just the Docs is distributed by an [MIT license](https://github.com/pmarsceill/j
 
 ### Contributing
 
-When contributing to this repository, please first discuss the change you wish to make via issue,
-email, or any other method with the owners of this repository before making a change. Read more about becoming a contributor in [our GitHub repo](https://github.com/pmarsceill/just-the-docs#contributing).
+When contributing to this repository, please first discuss the change you wish to make via issue, email, or any other method with the owners of this repository before making a change. Read more about becoming a contributor in [our GitHub repo](https://github.com/pmarsceill/just-the-docs#contributing).
 
-#### Thank you to the contributors of Just the Docs!
+#### Thank you to the contributors of Just the Docs\!
 
-<ul class="list-style-none">
-{% for contributor in site.github.contributors %}
-  <li class="d-inline-block mr-1">
-     <a href="{{ contributor.html_url }}"><img src="{{ contributor.avatar_url }}" width="32" height="32" alt="{{ contributor.login }}"/></a>
-  </li>
-{% endfor %}
-</ul>
+* {% for contributor in site.github.contributors %}
+* [![{{ contributor.login }}]({{ contributor.avatar_url }}){: width="32" height="32"}]({{ contributor.html_url }}){: .d-inline-block.mr-1}
+* {% endfor %}
+{: .list-style-none}
 
 ### Code of Conduct
 
